@@ -47,7 +47,7 @@ async function updateEvent(){
     if(!token){ alert("Please login first"); return; }
 
     try{
-        const res = await fetch("http://127.0.0.1:8000/admin/update-event", {
+        const res = await fetch("https://yandmacademy.onrender.com/", {
             method:"POST",
             headers: {"Content-Type":"application/json", "Authorization":`Bearer ${token}`},
             body: JSON.stringify({heading, description})
@@ -70,7 +70,7 @@ async function updateOffer(){
     if(!token){ alert("Please login first"); return; }
 
     try{
-        const res = await fetch("http://127.0.0.1:8000/admin/update-offer", {
+        const res = await fetch("https://yandmacademy.onrender.com/", {
             method:"POST",
             headers: {"Content-Type":"application/json", "Authorization":`Bearer ${token}`},
             body: JSON.stringify({heading, description})
