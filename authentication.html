@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="authentication.css">
+<body>
+    <div id="formcontainer">
+        <div>
+            <input type="text" placeholder="username" class="field" id="username">
+        </div>
+        <div id="usernameerror"></div>
+        <br>
+        <div>
+            <input type="password" placeholder="Password" class="field" id="password">
+        </div>
+        <div id="passworderror"></div>
+        <br>
+        <div id="login">
+            <button type="button" id="loginbutton" onclick="formvalidation()" >Login</button>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    <script src="authentication.js"></script>
+</body>
+</html>

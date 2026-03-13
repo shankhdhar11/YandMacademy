@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Portal</title>
+</head>
+
+<body>
+
+<!-- LOGIN SECTION -->
+
+<div id="login-section">
+
+<h2>Admin Login</h2>
+
+<input id="admin-username" placeholder="Username">
+<br><br>
+
+<input id="admin-password" type="password" placeholder="Password">
+<br><br>
+
+<button onclick="login()">Login</button>
+
+</div>
+
+
+<!-- ADMIN PANEL -->
+
+<div id="admin-panel">
+
+<h2>Update Upcoming Event</h2>
+
+<input id="event-heading" placeholder="Event Heading">
+<br><br>
+
+<textarea id="event-description" placeholder="Event Description"></textarea>
+<br><br>
+
+<button onclick="updateEvent()">Save Event</button>
+
+
+<h2>Update Upcoming Offer</h2>
+
+<input id="offer-heading" placeholder="Offer Heading">
+<br><br>
+
+<textarea id="offer-description" placeholder="Offer Description"></textarea>
+<br><br>
+
+<button onclick="updateOffer()">Save Offer</button>
+
+<br><br>
+
+<button onclick="logout()">Logout</button>
+
+</div>
+
+
+<!-- JS always at bottom -->
+<script src="admin.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <link rel="stylesheet" href="franchise.css">
+    <!--Remixicons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@600;700;800&display=swap">
+<body>
+    <div id="pagewrapper">
+    <nav id="navbar">
+        <div id="logodiv">
+            <div id="logo">
+                <img src="images.png" class="logoimg" alt="logo">
+                <div id="logotext">
+                    <h2 style="color:black" id="logotxt">  Y&M <span style="color:grey">Academy<br>  and Productions</span></h2>
+                </div>
+            </div>
+        </div>
+
+        <div id="home" class="optionbox">
+            <a href="index.html"  class="option">Home</a>
+        </div>
+        <div id="Courses" class="optionbox">
+            <a href="courses.html" class="option">Courses</a>
+        </div>
+        <div id="musicproduction" class="optionbox">
+            <a href="musicproduction.html" class="option">Music Production</a>
+        </div>
+        <div id="services" class="optionbox">
+            <a href="services.html" class="option">Services</a>
+        </div>
+        <div id="about" class="optionbox">
+            <a href="about.html" class="option">About</a>
+        </div>
+        <div id="franchise" class="optionbox">
+            <a href="franchise.html" id="franchiseoption" class="option">Franchise</a>
+        </div>
+        <div id="contact us" class="optionbox">
+            <a href="contactus.html" class="option">Contact Us</a>
+        </div>
+        <div id="opportunities" class="optionbox">
+            <a href="opportunities" class="option">Opportunities</a>
+        </div>
+        <div id="login">
+            <button id="loginbtn" type="button" onclick="authenticationpage()"><b>Admin Login</b></button>
+        </div>
+        <div id="menu">
+            <i class="ri-menu-3-line" id="menubtn" onclick="menulist()" ></i>
+        </div>
+        <div id="cross">
+            <i class="ri-close-fill" id="crossbtn" onclick="crosslist()" ></i>
+        </div>
+    </nav>
+
+    <div id="navlistdiv">
+        <ul id="navlist">
+            <li><a href="index.html" class="listoptions">Home</a></li>
+            <br>
+            <li><a href="course.html" class="listoptions">Course</a></li>
+            <br>
+            <li><a href="musicproduction" class="listoptions">Music Production</a></li>
+            <br>
+            <li><a href="services.html" class="listoptions">Services</a></li>
+            <br>
+            <li><a href="about.html" class="listoptions">About</a></li>
+            <br>
+            <li><a href="franchise.html" class="listoptions">Franchise</a></li>
+            <br>
+            <li><a href="contactus.html" class="listoptions">Contact Us</a></li>
+            <br>
+            <li><a href="opportunities.html" class="listoptions">Opportunities</a></li>
+            <br>
+            <li> <button id="loginbtn2" type="button" onclick="authenticationpage()"><b>Admin Login</b></button></li>
+        </ul>
+    </div>
+
+    <section id="section1">
+        <div id="container1">
+            <h1 id="heading">Partner With <span class="headingspan">Us</span></h1>
+            <p>Start your own Y&M Academy branch. We provide the curriculum, the</p>
+            <p>brand, and the roadmap to success.</p>
+            <div id="socialmedia">
+                    <button type="button" class="socialmediabutton"><i class="ri-facebook-fill"></i></button>
+                    <button type="button" class="socialmediabutton"><i class="ri-instagram-fill"></i></button>
+                    <button type="button" class="socialmediabutton"><i class="ri-twitter-fill"></i></button>
+                    <button type="button" class="socialmediabutton"><i class="ri-linkedin-fill"></i></button>
+                    <button type="button" class="socialmediabutton"><i class="ri-youtube-fill"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="section2">
+        <div id="container2">
+        <div id="subcontainer2">
+            <div id="details">
+                <div class="div">
+                    <div class="num">
+                        <h1>1</h1>
+                    </div>
+                    <div class="desc">
+                    <h2 class="headingspan">Apply & screen</h2>
+                    <p>Submit your details. We review your location eligibility</p>
+                    </div>
+                </div>
+                <br><br>
+                <div class="div">
+                    <div class="num">
+                        <h1>2</h1>
+                    </div>
+                    <div>
+                    <h2 class="headingspan">Site Setup</h2>
+                    <p>We design the studio acoustics and classroom layout.</p>
+                    </div>
+                </div>
+                <br><br>
+                <div class="div">
+                    <div class="num">
+                        <h1>3</h1>
+                    </div>
+                    <div>
+                    <h2 class="headingspan">Launch</h2>
+                    <p>Marketing kick-off and student enrollment begins.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contactusform">
+                <input type="text" placeholder="Full Name" id=fullname class="field">
+                <div id="nameerror"></div>
+                <br>
+                <input type="tel"  placeholder="phone number" id="phonenumber" class="field">
+                <div id="phonenumbererror"></div>
+                <br>
+                <input type="text" placeholder="Your Address" id="address" class="field">
+                <div id="addresserror"></div>
+                <br>
+                <input type="text" placeholder="Proposed City" id="proposedcity" class="field">
+                <div id="cityerror"></div>
+                <br> 
+                <input type="text" placeholder="Proposed address" id="proposedaddress" class="field">
+                <br>
+                <input type="url" placeholder="proposed location(enter the url of the location)" id="proposedlocation" class="field">
+                <br>
+                <p>attach the location photos in pdf</p>
+                <input type="file" accept="application/pdf , .pdf" id="proposedlocationphotos" class="field">
+                <br>
+                <button type="button" onclick="formvalidation()" id="submitbtn">Send message <i class="ri-arrow-right-long-line"></i></button>
+                <div id="formmessage"></div>       
+            </div>
+        </div>
+        <div id="map">
+            <iframe id="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.4818558215766!2d77.3429075!3d28.6452875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfba6feb40d7d%3A0xee8b8ad133d4430a!2sY%26M%20%3AThe%20Academy%20of%20Music%20and%20Productions!5e0!3m2!1sen!2sin!4v1773120116085!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        </div>
+    </section>
+    </div>
+</body>

@@ -1,0 +1,76 @@
+body{
+   background: 
+  radial-gradient(at 0% 0%, rgba(219, 24, 263, 7.5) 0px, transparent 50%),
+  radial-gradient(at 100% 0%, rgba(189, 218, 254, 7.5) 0px, transparent 50%),
+  white;
+    position: relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+
+   background: 
+  radial-gradient(at 0% 0%, rgba(211, 163, 255, 0.5) 0px, transparent 50%),
+  radial-gradient(at 100% 0%, rgba(181, 209, 246, 0.5) 0px, transparent 50%),
+  white;
+
+    background-repeat: no-repeat;
+}
+html, body {
+    height: 100%;
+}
+#formcontainer{
+    background: radial-gradient(circle at top right, #fdf2f8 0%, #ffffff 50%, #fff9f0 100%);
+    border-radius:30px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:5rem;
+    width:30%;
+    flex-direction:column;
+}
+.field{
+    border-radius:30px;
+    width:20rem;;
+    height:1rem;
+    border:none;
+    padding:2rem;
+    background: linear-gradient(135deg, #dbe3fc 0%, #ebe7fc 50%, #ffffff 100%);
+    font-size:1rem;
+}
+@media only sreen and (max-width:780px){
+    .field{
+        width:8rem;
+    }
+}
+@media only screen and (max-width:550px){
+    .field{
+        width:10rem;
+        height:0.5rem
+    }
+}
+#loginbutton{
+    width:22rem;
+    height:3rem;
+    background: linear-gradient(to right, #1d4ed8, #9333ea, #db2777);
+    color: #ffffff;
+    font-family:sans-serif;
+    border-radius:30px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border:none;
+    font-size:1rem;
+    cursor:pointer;
+}
+@media only screen and (max-width:550px){
+    #loginbutton{
+        width:12rem;
+
+    }
+}
