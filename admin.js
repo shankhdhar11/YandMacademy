@@ -17,7 +17,7 @@ async function login(){
     const password = document.getElementById("admin-password").value;
 
     try{
-        const res = await fetch("https://yandmacademy.onrender.com/admin/update-event",{
+        const res = await fetch("https://yandmacademy.onrender.com/login",{
             method:"POST",
             headers: {"Content-Type":"application/json"},
             body: JSON.stringify({username, password})
@@ -47,7 +47,7 @@ async function updateEvent(){
     if(!token){ alert("Please login first"); return; }
 
     try{
-        const res = await fetch("https://yandmacademy.onrender.com/admin/update-offer", {
+        const res = await fetch("https://yandmacademy.onrender.com/admin/update-event", {
             method:"POST",
             headers: {"Content-Type":"application/json", "Authorization":`Bearer ${token}`},
             body: JSON.stringify({heading, description})
@@ -70,7 +70,7 @@ async function updateOffer(){
     if(!token){ alert("Please login first"); return; }
 
     try{
-        const res = await fetch("https://yandmacademy.onrender.com/", {
+        const res = await fetch("https://yandmacademy.onrender.com/admin/update-offer", {
             method:"POST",
             headers: {"Content-Type":"application/json", "Authorization":`Bearer ${token}`},
             body: JSON.stringify({heading, description})
